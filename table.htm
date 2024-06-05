@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">              
+        <title>Table</title>    
+        <style>
+            body
+            {
+                font-family: Arial, Helvetica, sans-serif;     /*随便设置的字体*/
+            }
+            table.fx
+            {
+                width:100%;
+                height: 100px;
+
+            }
+            table.fx,td,th
+            {
+                border-collapse: collapse;
+                border: 2.5px solid rgb(123, 123, 255);
+                background-color: bisque;
+                text-align: center;
+            }
+            th
+            {
+                text-align: left;
+                font-size: 1.5em;
+            }
+            td
+            {
+                font-size: 1.3em;
+                padding-left: 4px;
+                padding-right: 4px;
+            }
+            h1
+            {
+                text-align:center;
+                font-size: 2em;        
+            }
+        </style>
+    </head>
+    <body>
+        <h1>线性函数</h1>
+        <br><br><br>
+        <table class="fx" border="1">
+            <thead>
+                <th colspan="7">f(x)=3x+6:</th>
+            </thead>
+            <tbody>
+                <tr class="function">
+                    <td>x:</td>  
+                    <td>1 </td> 
+                    <td>2</td> 
+                    <td>3</td>
+                    <td>4</td>  
+                    <td>5</td>  
+                    <td>6</td>               
+                </tr>
+                <tr class="function">
+                    <td>f(x):</td>
+                    <td>9 </td>
+                    <td>12</td>
+                    <td>15</td>
+                    <td>18</td>
+                    <td>21</td>
+                    <td>24</td>
+                </tr>
+            </tbody>          
+        </table>
+    </body>
+</html>
+<!--
+有关TABLE的知识 ：
+    1.参数，标签及CSS声明:
+        ·<thead> 用于定义表格的标题部分。
+
+        ·<tbody> 用于定义表格的主体部分。
+        
+        ·tr： table row 的缩写，表示表格的一行。
+        
+        ·td： table data 的缩写，表示表格的数据单元格(内容)。
+        
+        ·th： table header的缩写，表示表格的表头单元格(标题)。
+
+        ·border:属性，显示表格边框，0则没有，数字越大边框越粗。
+
+        ·<caption>:可用于为整个表格定义标题。
+
+        ·rowspan:属性，用于<tr>或<td>，显示跨行数，数字越大跨行数越多。
+
+        ·colspan:属性，用于<tr>或<td>，显示跨列数，数字越大跨列数越多。
+
+        ·border-collapse:设置是否为单一边框
+-->
