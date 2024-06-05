@@ -1,36 +1,69 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Oscar's website</title>
-<script>
-
-</script>
-</head>
-<body>
-<div id="head" style="height:80px;width:300px;float:left">
-<h1 style="color:orange">github网站测试</h1>
-</div>
-<br>
-	<div id="content" style="background-color:#FFFFF0;height:100px;width:400px;float:left">
-	<form border="0">
-	<table>
-		<tbody>
-		<tr>
-			<label for="name">帐号名称</label> 
-			<input type="text" id="name">
-			<br>
-			<label for="password">帐号密码</label>
-			<input type="password" id="password">
-		</tr>
-		<tr>
-			<input type="radio"ip="vip"value="yes">
-			<label for="vip">是否为VIP?</label>
-		</tbody>
-	</table>
-</form>		
-	</div>
-
-
-</body>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            p.intro
+            {
+                position: fixed;
+                width: 100%;
+                padding: 5px;
+                background-color: #cae8ca;
+                border: 2px solid #4CAF50;
+                bottom: 0px;
+            }
+            img
+            {
+                height: 200px;width: 350px;
+                position: sticky;
+                top: 0;
+                float: right;
+            }
+            a
+            {
+                border: 1px solid black;
+                padding: 4px;
+                background-color: rgb(255, 238, 0);
+                font-weight: bolder;
+                border-radius: 6px;
+            }
+            a:link{color:#000000;text-decoration:none;}
+            a:visited{color:#009607;text-decoration:none;}
+            a:hover{color:#ff00aa;text-decoration:underline;}
+            a:active{color:#6200ff;text-decoration:underline;}
+        
+        </style>
+    </head>
+    <body style="background-color: rgb(252, 255, 213);font-family: Arial, Helvetica, sans-serif; ">
+        <h1 style="text-align: center;">HTML网站测试</h1>
+        <div>
+            <p class="intro"><b>想要获得更多信息吗？请联系邮箱yyds15876115752@163.com。</b></p>
+            <a id="content" href="C:\Users\GDDS\Desktop\HTML网页测试1.11.2版本\content.htm" target="_blank">点击查看CSS简介</a>
+            <a id="table" href="C:\Users\GDDS\Desktop\HTML网页测试1.11.2版本\table.htm" target="_blank">线性函数讲解</a>
+            <img src="C:\Users\GDDS\Desktop\HTML网页测试1.11.2版本\清水.png" alt="smile" id="smile">    
+        </div>
+        
+    </body>
 </html>
+<!--
+    font-weight:设置字体粗细
+   
+    border-radius:设置圆角边框
+
+    padding:设置边框与内容的距离
+
+    position:设置元素的定位 
+    值：
+    -static 默认值，即没有定位 
+    -relative 相对于原来的位置移动，移动相对定位元素，但它原本所占的空间不会改变。
+    -fixed 固定定位，无论窗口大小与滚动都不会改变其位置
+    -absolute 
+            ·可以将元素放在页面任何一个位置
+            ·absolute 定位使元素的位置与文档流无关，因此不占据空间。
+            ·absolute 定位的元素和其他元素重叠。
+    -sticky 
+            ·可以叫做粘性走位。
+            ·指定 top, right, bottom 或 left 四个阈值其中之一，才可使粘性定位生效。
+            ·元素定位表现为在跨越特定阈值前为相对定位，之后为固定定位。
+
+-->
